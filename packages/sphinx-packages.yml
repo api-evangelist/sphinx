@@ -1,0 +1,32 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.sphinx.ai
+description: >-
+  First-party Sphinx developer libraries and tools. Verified against PyPI and the
+  Sphinx documentation at docs.sphinx.ai. Note: the generic "sphinx" package on
+  PyPI is the unrelated Python documentation generator and is NOT this company;
+  the first-party CLI is published as "sphinx-ai-cli". The Sphinx Library
+  (import name "sphinxai") is a first-party Python SDK that is auto-injected into
+  Sphinx-managed notebooks rather than distributed on PyPI (no public registry
+  page — 404), so it has no install command.
+packages:
+  - language: python
+    registry: pypi
+    name: sphinx-ai-cli
+    url: https://pypi.org/project/sphinx-ai-cli/
+    install: pip install sphinx-ai-cli
+    binary: sphinx-cli
+    version: 1.1.0
+    summary: CLI for Sphinx AI
+    official: true
+  - language: python
+    registry: none
+    name: sphinxai
+    url: https://docs.sphinx.ai/agent/capabilities/sphinx-library
+    install: null
+    import: sphinxai
+    summary: >-
+      The Sphinx Library — a first-party Python SDK providing LLM chat completion,
+      text embeddings, vision, and secure access to connections and secrets;
+      auto-available inside Sphinx-managed notebooks (not published to PyPI).
+    official: true

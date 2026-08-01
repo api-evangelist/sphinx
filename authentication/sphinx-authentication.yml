@@ -1,0 +1,32 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.sphinx.ai/cli-documentation/authentication
+docs: https://docs.sphinx.ai/cli-documentation/authentication
+description: >-
+  Sphinx authenticates developers to its platform two ways. No public OpenAPI is
+  published, so this profile is searched from the docs rather than derived from a
+  spec.
+summary:
+  types: [apiKey, http-bearer-jwt]
+  api_key_in: [env]
+  api_key_prefix: "sk-"
+schemes:
+  - name: ApiKey
+    type: apiKey
+    in: env
+    env_var: SPHINX_API_KEY
+    prefix: "sk-"
+    description: >-
+      API key obtained from the Sphinx Dashboard account settings. Stored in the
+      SPHINX_API_KEY environment variable; the CLI uses it automatically when set,
+      bypassing interactive login.
+    obtain: https://dashboard.prod.sphinx.ai
+    sources: [https://docs.sphinx.ai/cli-documentation/authentication]
+  - name: JWTLogin
+    type: http
+    scheme: bearer
+    bearerFormat: JWT
+    description: >-
+      Interactive login via `sphinx-cli auth login`, which persists a token in a
+      ~/.sphinx directory. Token must be renewed every 30 days.
+    sources: [https://docs.sphinx.ai/cli-documentation/authentication]

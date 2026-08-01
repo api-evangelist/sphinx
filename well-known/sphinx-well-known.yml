@@ -1,0 +1,23 @@
+generated: '2026-07-21'
+method: searched
+source: live probes of /.well-known/ on sphinx.ai and docs.sphinx.ai
+description: >-
+  Probed the standard /.well-known/ discovery surface on the Sphinx website and
+  docs hosts. None of the discovery documents are published (all 404). Recorded
+  here as honest negative data; no WellKnown/SecurityTxt pointer is emitted in
+  apis.yml because no document was found.
+hosts:
+  - host: https://sphinx.ai
+    documents:
+      - {path: /.well-known/security.txt, status: 404}
+      - {path: /.well-known/openid-configuration, status: 404}
+      - {path: /.well-known/oauth-authorization-server, status: 404}
+      - {path: /.well-known/api-catalog, status: 404}
+      - {path: /.well-known/ai-plugin.json, status: 404}
+  - host: https://docs.sphinx.ai
+    documents:
+      - {path: /.well-known/security.txt, status: 404}
+      - {path: /.well-known/openid-configuration, status: 404}
+      - {path: /.well-known/oauth-authorization-server, status: 404}
+      - {path: /.well-known/api-catalog, status: 404}
+      - {path: /.well-known/ai-plugin.json, status: 404}

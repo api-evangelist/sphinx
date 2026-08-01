@@ -1,8 +1,20 @@
 aid: sphinx
 name: Sphinx
-description: Sphinx is a company surfaced as a portfolio company of lightspeed-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Sphinx is an AI reliability and governance system for data and analytics that
+  works to make AI-generated answers over enterprise data correct and auditable.
+  Its tagline is "AI gets data wrong. Sphinx makes it right." The product pairs a
+  data-science AI agent that lives in the code editor (a VS Code / Cursor
+  extension, a command-line interface, and a Jupyter-native workflow) with a
+  centralized, evolving knowledge base of business definitions and metrics,
+  governance and role-based access controls, self-correcting accuracy that
+  catches drift and hallucinations, and end-to-end auditability with full output
+  lineage. Developers reach the platform through the Sphinx CLI (sphinx-ai-cli),
+  the in-notebook Sphinx Library Python package (sphinxai) for LLM chat,
+  embeddings, vision, and secure access to connections and secrets, and MCP for
+  connecting external tools. Sphinx is SOC 2 Type 2 compliant with a zero data
+  retention posture. The company raised a $9.5M seed round led by Lightspeed
+  Venture Partners.
 url: https://raw.githubusercontent.com/api-evangelist/sphinx/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,14 +22,80 @@ x-backed-by:
 - lightspeed-venture-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
+image: https://framerusercontent.com/assets/kdpSxw0VyNireeOL1RaqcMcD5A.jpg
 tags:
 - Company
+- Artificial Intelligence
+- Data Science
+- Data Governance
+- Analytics
+- AI Agents
+- Developer Tools
+- Jupyter
+- LLM
+- Data Reliability
 apis: []
+common:
+- type: Website
+  url: https://sphinx.ai
+- type: DeveloperPortal
+  url: https://docs.sphinx.ai
+- type: Documentation
+  url: https://docs.sphinx.ai
+- type: GettingStarted
+  url: https://docs.sphinx.ai/quickstart
+- type: Blog
+  url: https://www.sphinx.ai/blog/
+- type: Support
+  url: mailto:support@sphinx.ai
+- type: SignUp
+  url: https://dashboard.prod.sphinx.ai
+- type: Login
+  url: https://dashboard.prod.sphinx.ai
+- type: TermsOfService
+  url: https://sphinx.ai/terms-of-service
+- type: PrivacyPolicy
+  url: https://sphinx.ai/privacy
+- type: TrustCenter
+  url: https://trust.sphinx.ai
+- type: Compliance
+  url: security/sphinx-trust-center.yml
+- type: LLMsTxt
+  url: llms/sphinx-llms.txt
+- type: Packages
+  url: packages/sphinx-packages.yml
+- type: SDKs
+  url: packages/sphinx-packages.yml
+- type: CLI
+  url: cli/sphinx-cli.yml
+- type: Authentication
+  url: authentication/sphinx-authentication.yml
+- type: Conventions
+  url: conventions/sphinx-conventions.yml
+- type: DomainSecurity
+  url: security/sphinx-domain-security.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 8
+  pass: local-v1

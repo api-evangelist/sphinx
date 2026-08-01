@@ -1,0 +1,45 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.sphinx.ai/cli-documentation/installation
+description: >-
+  The Sphinx CLI command surface — a headless way to run the Sphinx data-science
+  AI agent against a Jupyter notebook from the terminal. Captured verbatim from
+  docs.sphinx.ai/cli-documentation. The CLI package itself is catalogued in
+  packages/sphinx-packages.yml (PyPI: sphinx-ai-cli, binary: sphinx-cli).
+docs: https://docs.sphinx.ai/cli-documentation/installation
+install:
+  pip: pip install sphinx-ai-cli
+binary: sphinx-cli
+commands:
+  chat:
+    - name: chat
+      description: >-
+        Run the Sphinx agent against a notebook filepath with a prompt; the
+        primary command. Use `sphinx-cli chat --help` for all arguments.
+  auth:
+    - name: auth login
+      description: >-
+        Authenticate interactively via JWT; creates a ~/.sphinx directory
+        holding a token that must be renewed every 30 days.
+options:
+  core:
+    - {name: "-h, --help", description: Display help message and exit.}
+    - {name: "-v, --verbose", description: Enable detailed execution messages.}
+    - {name: "-l, --log-level", description: "Set logging verbosity (debug, info, warn, error, fatal)."}
+  notebook_server:
+    - {name: "--notebook-filepath", description: Specify notebook file path (interactive selection if omitted).}
+    - {name: "--jupyter-server-url", description: Connect to an existing Jupyter server.}
+    - {name: "--jupyter-server-token", description: Authentication token for Jupyter server access.}
+  service:
+    - {name: "--sphinx-url", description: Set the Sphinx service connection URL.}
+    - {name: "--sphinx-rules-path", description: Point to a custom rules file for behavior customization.}
+  memory:
+    - {name: "--no-memory-read", description: Disable semantic cache utilization.}
+    - {name: "--no-memory-write", description: Prevent updates to the semantic cache.}
+  environment:
+    - {name: "--no-package-installation", description: Skip automatic library installation.}
+    - {name: "--no-ripgrep-installation", description: Disable RipGrep binary installation.}
+  tools:
+    - {name: "--no-collapse-exploratory-cells", description: Keep exploratory cells expanded.}
+    - {name: "--no-file-search", description: "Disable file search functionality (grep, ls, read)."}
+    - {name: "--no-web-search", description: Disable web search capabilities.}

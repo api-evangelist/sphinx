@@ -1,0 +1,39 @@
+# Sphinx Docs
+
+## Docs
+
+- [Overview](https://docs.sphinx.ai/agent/agent-modalities.md): Choose the right interaction mode for your workflow with Sphinx
+- [Agent](https://docs.sphinx.ai/agent/agent-modalities/agent.md): Interact with Sphinx in Agent mode for autonomous task execution and problem solving
+- [Plan](https://docs.sphinx.ai/agent/agent-modalities/plan.md): Use Plan mode to review and approve execution strategies before implementation
+- [Safe Mode](https://docs.sphinx.ai/agent/agent-modalities/safe-mode.md): Enable Safe Mode to require approval for all code execution and external operations
+- [Streamlit](https://docs.sphinx.ai/agent/agent-modalities/streamlit.md): Build interactive data applications using Streamlit with Sphinx assistance
+- [File Search](https://docs.sphinx.ai/agent/capabilities/file-search.md): Search and locate files across your workspace using regex patterns
+- [PDF Parsing](https://docs.sphinx.ai/agent/capabilities/pdf-via-reducto.md): Extract and analyze data from PDF documents using Reducto integration
+- [The Sphinx Library](https://docs.sphinx.ai/agent/capabilities/sphinx-library.md): A Python library providing LLM chat completion, text embeddings, vision capabilities, and secure access to connections and secrets
+- [Web Search](https://docs.sphinx.ai/agent/capabilities/websearch-via-parallels.md): Real-time web search capabilities powered by Parallel AI
+- [Engines](https://docs.sphinx.ai/agent/engines.md): Select the AI model that powers Sphinx's reasoning and code generation
+- [Overview](https://docs.sphinx.ai/agent/jupyter-integration.md): Work with Jupyter notebooks in Sphinx for interactive data analysis and exploration
+- [Connect to Different Backends](https://docs.sphinx.ai/agent/jupyter-integration/connect-to-different-backends.md): Use Sphinx with Databricks, Google Colab, Azure ML, AWS SageMaker, JupyterHub, and other notebook environments
+- [Create and Run Notebooks](https://docs.sphinx.ai/agent/jupyter-integration/create-and-run.md): How Sphinx creates, edits, and executes Jupyter notebook cells
+- [Long-Running Operations](https://docs.sphinx.ai/agent/jupyter-integration/long-running-operations.md): How Sphinx handles time-consuming computations and manages execution timeouts
+- [Python Environment Setup](https://docs.sphinx.ai/agent/jupyter-integration/python-environment-setup.md): Set up Python environments for Jupyter notebooks in VS Code using UV, venv, or remote servers
+- [Authentication](https://docs.sphinx.ai/cli-documentation/authentication.md): How to authenticate and manage credentials with the Sphinx CLI
+- [Installation](https://docs.sphinx.ai/cli-documentation/installation.md): How to install and use the Sphinx CLI
+- [Options](https://docs.sphinx.ai/cli-documentation/options.md): Reference for all command-line options supported by the Sphinx CLI
+- [Guardrails](https://docs.sphinx.ai/configuration/guardrails.md): Control what code Sphinx generates and executes with configurable permission levels
+- [Integrations](https://docs.sphinx.ai/configuration/integrations.md): Connect your cloud data warehouses and services to Sphinx
+- [MCP](https://docs.sphinx.ai/configuration/mcp.md): Connect external tools and services to Sphinx using the Model Context Protocol
+- [Memories](https://docs.sphinx.ai/configuration/memories.md): A semantic cache that captures user preferences, data relationships, and organizational knowledge
+- [Rules](https://docs.sphinx.ai/configuration/rules.md): Configure custom rules and instructions to guide Sphinx's behavior in your projects.
+- [Secrets](https://docs.sphinx.ai/configuration/secrets.md): Securely manage and access sensitive credentials and API keys in your Sphinx notebooks.
+- [Installation](https://docs.sphinx.ai/extension-documentation/installation.md): Install the Sphinx extension for VS Code, Cursor, and other compatible editors
+- [Features & Options](https://docs.sphinx.ai/extension-documentation/options.md): Explore Sphinx's features and how to configure them for your workflow
+- [Overview](https://docs.sphinx.ai/extension-documentation/overview.md): The Sphinx VS Code extension brings AI-powered data science to your IDE
+- [Welcome to Sphinx](https://docs.sphinx.ai/index.md): The AI assistant for data science that lives in your code editor
+- [Getting Started](https://docs.sphinx.ai/quickstart.md): Get started with Sphinx in minutes and run your first AI-powered analysis
+- [Prompting Best Practices](https://docs.sphinx.ai/use-cases-example-analyses/best-practices.md): How to write effective prompts and get the most out of Sphinx
+- [Hello World!](https://docs.sphinx.ai/use-cases-example-analyses/example-workflows/hello-world.md): Your first Sphinx analysis
+
+## Optional
+
+- [Blog](https://www.sphinx.ai/blog/)

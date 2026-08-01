@@ -1,0 +1,25 @@
+generated: '2026-07-21'
+method: searched
+probe: false
+source: https://trust.sphinx.ai
+url: https://trust.sphinx.ai
+description: >-
+  Sphinx maintains a trust center at trust.sphinx.ai (live, HTTP 200). The
+  homepage at sphinx.ai states the product is "SOC 2 Type 2 compliant with zero
+  data retention." The trust-center page is a client-rendered app whose
+  certification list did not render to the fetcher, so the SOC 2 Type 2 claim is
+  captured from the marketing homepage as the verifiable evidence; deeper cert
+  detail would require the rendered trust portal.
+certifications:
+  - {name: SOC 2 Type 2, source: https://sphinx.ai}
+data_posture:
+  zero_data_retention: true
+  note: >-
+    Code execution happens on the user's own kernel; Sphinx advertises a zero
+    data retention posture for customer data.
+docs:
+  - https://trust.sphinx.ai
+  - https://sphinx.ai
+evidence:
+  - {source: https://trust.sphinx.ai, status: 200, keywords: [trust center]}
+  - {source: https://sphinx.ai, keywords: [soc 2 type 2, zero data retention]}

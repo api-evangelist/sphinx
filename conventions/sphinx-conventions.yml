@@ -1,0 +1,58 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.sphinx.ai
+docs: https://docs.sphinx.ai
+description: >-
+  Cross-cutting conventions for working with Sphinx as a developer. Sphinx is a
+  data-science AI agent (VS Code / Cursor extension + CLI + in-notebook Python
+  library) rather than a REST API, so these conventions describe the developer
+  contract of the agent platform, not HTTP request/response semantics. No public
+  OpenAPI is published, so pagination / idempotency HTTP conventions do not apply
+  and are recorded as not-applicable rather than fabricated.
+authentication:
+  style: api-key + jwt
+  api_key_env: SPHINX_API_KEY
+  api_key_prefix: "sk-"
+  interactive_login: "sphinx-cli auth login (30-day token in ~/.sphinx)"
+  ref: authentication/sphinx-authentication.yml
+secrets:
+  description: >-
+    Secrets and credentials are managed centrally and accessed in notebooks via
+    the Sphinx Library (get_user_secret_value, get_connection_credentials); code
+    execution happens on the user's own kernel.
+  docs: https://docs.sphinx.ai/configuration/secrets
+connections:
+  description: >-
+    Cloud data warehouses/services (Snowflake, Databricks, Google Colab, Azure
+    ML, AWS SageMaker, JupyterHub) connect through Integrations; credentials are
+    retrieved securely at runtime.
+  docs: https://docs.sphinx.ai/configuration/integrations
+mcp:
+  role: client
+  description: >-
+    Sphinx acts as an MCP client — it connects external tools and services to the
+    agent via the Model Context Protocol. It does not publish a hosted MCP server.
+  docs: https://docs.sphinx.ai/configuration/mcp
+agent_modalities:
+  description: >-
+    Four interaction modes governing autonomy: Agent (autonomous), Plan (approve
+    strategy first), Safe Mode (approve every code execution), and Streamlit
+    (build interactive apps).
+  docs: https://docs.sphinx.ai/agent/agent-modalities
+guardrails:
+  description: Configurable permission levels controlling what code Sphinx generates and executes.
+  docs: https://docs.sphinx.ai/configuration/guardrails
+memory:
+  description: >-
+    A semantic cache ("Memories") captures user preferences, data relationships,
+    and organizational knowledge; toggleable per run via --no-memory-read /
+    --no-memory-write.
+  docs: https://docs.sphinx.ai/configuration/memories
+idempotency:
+  supported: false
+  note: No idempotency-key contract is documented (not a REST transaction API).
+pagination:
+  applicable: false
+error_envelope:
+  applicable: false
+  note: No public HTTP API error catalog is published.
